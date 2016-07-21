@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+		<title>SUPER AWESOME TRIVIA TIME!!!</title>
+	</head>
+	<body>
+		<div class="container">
+			<div id='message' class="row">
+				<div class="col-md-12">
+					<div class="jumbotron text-center">
+						<h1>YOU READY FOR TIVIA?!!?!?</h1>
+						<h2>YEAH YOU ARE!!!</h2>
+					</div>
+				</div>
+			</div>
+			<div id='start' class="row center-block">
+					<button id='startButton' class="col-md-6 col-md-offset-3 btn btn-primary btn-lg btn-info"><h1>START!</h1></button>
+			</div>
+			<div id='triviaContainer' class="row center-block" style='display:none'>
+				<div id='trivia' class="col-md-12 center-block">
+					<h3 class="text-center">HURRY UP YOU ONLY HAVE: <span id='timer'></span> SECONDS LEFT OMG!!!</h3>
+					<h1 id='triviaQuestion' class='text-center'></h1>
+					<div id='answerList' class="btn-group-vertical center-block">
+						<button class="btn btn-primary btn-lg center-block">ANSWER A</button>
+						<button class="btn btn-primary btn-lg center-block">ANSWER B</button>
+						<button class="btn btn-primary btn-lg center-block">ANSWER C</button>
+						<button class="btn btn-primary btn-lg center-block">ANSWER D</button>
+					</div>
+				</div>
+				<div id='result' class="col-md-12 center-block" style="display:none">
+					<h1 class="text-center"></h1>
+				</div>
+				<div id='results' class="col-md-12 center-block" style="display:none">
+					<h1 class="center-text">HERE'S HOW YOU DID!</h1>
+					<h1 class="center-text">Number of Questions Right: <span id='right'></span></h1>
+					<h1 class="center-text">Number of Questions Wrong: <span id='wrong'></span></h1>
+					<button class="btn btn-primary btn-lg" onclick="location.reload()">RESTART</button>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="assets/js/jquery-3.0.0.js"></script>
+		<script type="text/javascript" src="assets/js/shuffle.js"></script>
+		<script type="text/javascript" src="assets/js/game.js"></script>
+	</body>
+</html>

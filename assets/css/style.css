@@ -1,0 +1,23 @@
+body
+{
+	background-image: url('../imgs/background.png');
+	background-size: cover;
+}
+
+.jumbotron
+{
+	opacity: .5;
+}
+
+#triviaContainer
+{
+	height:500px;
+	background: white;
+	margin-top:75px;
+	opacity: .9;
+}
+
+#answerList
+{
+	list-style-type: none;
+}
