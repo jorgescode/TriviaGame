@@ -172,7 +172,7 @@ $(document).ready(function()
 	function startTimer()
 	{
 		// time variable
-	    var time = 40;
+	    var time = 30;
 
 	    // clear any rogue timers that might've not been cleared but are still tracked by the global variable
 	    if(questionIntervalID !== undefined)
@@ -196,7 +196,7 @@ $(document).ready(function()
 	function startCountDown()
 	{
 		// runs setQuestion to load next question after timeout is reached
-		window.setTimeout(setQuestion, 1000);
+		window.setTimeout(setQuestion, 5000);
 		// console.log('ran start count down and set question ' + ++counter);
 	}
 
